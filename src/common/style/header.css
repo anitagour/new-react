@@ -1,0 +1,229 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.navbar-brand {
+  padding: 0px 0px !important;
+  margin-left: 100px;
+}
+.navbar {
+  background: #000 !important;
+}
+.nav-link {
+  color: #fff !important;
+  font-size: 16px !important ;
+  font-weight: 600 !important;
+  padding: 0px 30px !important;
+  transition: 0.5s;
+}
+.nav-link:hover {
+  color: #f18b38 !important;
+}
+
+/*========== ABOUT CSS START ===========*/
+.container1 {
+  background-image: linear-gradient(to left bottom, #ec6e05, #f6c433);
+
+  display: flex;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+}
+
+.box {
+  /* height: 240px;
+    width: 330px; */
+  border: 2px solid #eee;
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.box img {
+  transition: all 0.5s;
+}
+
+.box:hover img {
+  transform: scale(0);
+}
+
+.content img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+
+  box-sizing: border-box;
+  transform: scale(0) rotate(-180deg);
+  transition: all 0.5s;
+  color: #fff;
+}
+
+.box:hover .content img {
+  transform: scale(1) rotate(0deg);
+  transition-delay: 0.3s;
+}
+#txt {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex: 1;
+  font-family: sans-serif;
+  letter-spacing: 3.5px;
+  font-size: 35px;
+  font-weight: 700;
+  position: relative;
+  transform-style: preserve-3d;
+  perspective: 100px;
+  -webkit-transform-style: preserve-3d;
+  -webkit-perspective: 100px;
+}
+
+#txt > b {
+  height: 45px;
+  box-shadow: 0 0.4rem 0.3rem -0.3rem #aaa;
+  /* box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px inset; */
+  color: #ec6e05;
+  background: linear-gradient(#ec6e05, #ec6e05, #f6c433);
+  background-clip: text;
+  /* text-fill-color: transparent; */
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  transform-origin: bottom;
+  transform: rotateX(-85deg);
+  -webkit-transform-origin: top;
+  -webkit-transform: rotateX(-85deg);
+  animation: getUp 5s infinite;
+}
+
+#txt > b:nth-child(2) {
+  animation-delay: 0.25s;
+}
+
+#txt > b:nth-child(3) {
+  animation-delay: 0.5s;
+}
+
+#txt > b:nth-child(4) {
+  animation-delay: 0.75s;
+}
+
+#txt > b:nth-child(5) {
+  animation-delay: 1s;
+}
+
+#txt > b:nth-child(6) {
+  animation-delay: 1.25s;
+}
+
+#txt > b:nth-child(7) {
+  animation-delay: 1.5s;
+}
+
+#txt > b:nth-child(8) {
+  animation-delay: 1.75s;
+}
+
+@keyframes getUp {
+  10%,
+  50% {
+    transform: rotateX(0);
+  }
+
+  0%,
+  60%,
+  100% {
+    transform: rotateX(-85deg);
+  }
+}
+.ab-content-box h2 {
+  text-align: center;
+}
+p {
+  text-align: justify;
+  padding: 0px 30px;
+  color: #605454c4;
+  font-weight: 500;
+}
+/* .ab-points  {
+    display: flex;
+} */
+
+/*============ card section start ===============*/
+.card-1 {
+  padding-bottom: 20px;
+  position: relative;
+  width: 100%;
+  height: 100%;
+  border: 2px solid #ec6e05;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.image {
+  width: 100%;
+
+  overflow: hidden;
+  transition: all 2s ease-in-out;
+}
+
+.image:hover {
+  border-top-left-radius: 30px;
+  border-bottom-right-radius: 30px;
+  border-top-right-radius: 30px;
+  border-bottom-left-radius: 30px;
+}
+
+.image img {
+  width: 100%;
+  transition: all 2s ease-in-out;
+}
+
+.image:hover img {
+  transform: scale(2, 2);
+  cursor: pointer;
+}
+
+/*============== why choose start ============== */
+.choose-bg {
+  background: url("../../../public/img/bg-home-1.jpg");
+}
+.y-chose-card {
+  padding-bottom: 20px;
+  position: relative;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  height: 100%;
+  background: #fff;
+  border: 2px solid #ec6e05;
+  border-top-left-radius: 50px;
+  border-bottom-right-radius: 50px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.image-1{
+  width: 100px;
+  height: 100px;
+  padding: 15px ;
+  border: 1px solid #ec6e05;
+  display: flex;
+  justify-content: center;
+  border-radius: 50%;
+  box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+}
+
+
+
+
+.y-chose-card .img-box {
+  display: flex;
+  justify-content: center;
+}
+  /*=================== nav tab section ===================*/ 
+  
