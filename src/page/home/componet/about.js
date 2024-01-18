@@ -10,7 +10,7 @@ const About = () => {
               <b>A</b>
               <b>b</b>
               <b>o</b>
-              <b>u</b>
+              <b>u</b> abdhgfhg
               <b>t</b>
               <b>U</b>
               <b>s</b>
